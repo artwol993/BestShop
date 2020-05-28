@@ -222,7 +222,7 @@
 /*content*/
 
 .content__container {
-  width: calc(100wv - 20px);
+  // width: calc(100% - 20%);
   // background: pink;
   display: flex;
   align-items: center;
@@ -348,12 +348,6 @@ img[class*="stats__img"] {
 
 /*profits-section*/
 
-.profits {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .profits__container {
   display: flex;
   flex-direction: column;
@@ -362,7 +356,7 @@ img[class*="stats__img"] {
 }
 
 .profits__box {
-  height: 470px;
+  height: 400px;
   margin: 20px 30px;
   background: $c-white;
   border-radius: 5px;
@@ -370,48 +364,23 @@ img[class*="stats__img"] {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-}
-
-.profits__box__double {
-  height: 60%;
-  margin: 5px 5px;
-}
-
-.profits__box__double-img {
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.profits__box__double-img:last-of-type {
-  background: $c-primary-third;
-  border-radius: 5px;
-}
-
-.profits__box__double-img img {
-  width: 200px;
+  align-items: center;;
 }
 
 
-.profits__box__double h2 {
+.profits__box img {
+  width: 60%;
+  height: auto;
+  margin-top: 30px;
+
+}
+
+.profits__box h2 {
   font-size: 30px;
-  margin: 20px;
+  font-weight: $fw-normal;
 }
 
-.profits__box__double p {
+.profits__box p {
   font-size: 14px;
   font-weight: $fw-normal;
-  margin: 20px;
-}
-
-.phone-picture::after {
-  content: "";
-  width: 320px;
-  height: 320px;
-  background-color: $c-primary-first;
-  display: block;
-  border-radius: 50%;
-  position: relative;
 }

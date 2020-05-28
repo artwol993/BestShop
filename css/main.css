@@ -19,8 +19,7 @@ h1 {
 
 h2 {
   font-size: 2.188rem;
-  font-weight: 300;
-  margin: 5px 45px;
+  font-weight: 400;
   font-family: "Raleway", sans-serif;
   color: #000000;
 }
@@ -81,6 +80,7 @@ header {
 
 /*content*/
 .content__container {
+  width: calc(100wv - 20px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,5 +195,73 @@ img[class*=stats__img] {
   font-weight: 400;
   color: #a5a5a5;
   text-align: center;
+}
+
+/*profits-section*/
+.profits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profits__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f7f7;
+}
+
+.profits__box {
+  height: 470px;
+  margin: 20px 30px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #E8E9ED;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.profits__box__double {
+  height: 60%;
+  margin: 5px 5px;
+}
+
+.profits__box__double-img {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.profits__box__double-img:last-of-type {
+  background: #55dfb4;
+  border-radius: 5px;
+}
+
+.profits__box__double-img img {
+  width: 200px;
+}
+
+.profits__box__double h2 {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.profits__box__double p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 20px;
+}
+
+.phone-picture::after {
+  content: "";
+  width: 320px;
+  height: 320px;
+  background-color: #08a6e4;
+  display: block;
+  border-radius: 50%;
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */

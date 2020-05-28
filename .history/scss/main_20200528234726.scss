@@ -406,12 +406,6 @@ img[class*="stats__img"] {
   margin: 20px;
 }
 
-.phone-picture::after {
-  content: "";
-  width: 320px;
-  height: 320px;
-  background-color: $c-primary-first;
-  display: block;
-  border-radius: 50%;
-  position: relative;
+.trumpet {
+  width: 220px;
 }
