@@ -1,0 +1,313 @@
+    $c-primary-first: #08a6e4;
+    $c-primary-second: #fb3b64;
+    $c-primary-third: #55dfb4;
+    $c-black: #000000;
+    $c-white: #ffffff;
+    $c-background: #f7f7f7;
+    $c-details: #a5a5a5;
+    $c-shadow: #00000029;
+    $f-h: 'Raleway', sans-serif;
+    $f-p: 'Open Sans', sans-serif;
+    $fw-light: 300;
+    $fw-normal: 400;
+    $fw-bold: 700;
+    $fw-black: 800;
+
+/*reset*/
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /* fonts */
+
+  a, p, ul, span {
+    font-family: $f-p;
+  }
+
+  h1 {
+    font-size: 3.063rem;
+    font-weight: $fw-normal;
+    font-family: $f-h;
+    color: $c-black;
+  }
+
+  h2 {
+    font-size: 2.188rem;
+    font-weight: $fw-light;
+    margin: 5px 45px;
+    font-family: $f-h;
+    color: $c-black;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: $fw-bold;
+    margin: 5px;
+    font-family: $f-h;
+    color: $c-black;
+  }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: $fw-light;
+    font-family: $f-h;
+    color: $c-primary-first;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .body {
+      width: 100vh;
+  }
+  /*header*/
+  header {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 25px;
+      box-shadow: 0px 3px 6px $c-shadow;
+  }
+
+//   .hamburger {
+//     margin: 0;
+//     padding: 0;
+//     border: 0;
+//     background-color: transparent;
+//     cursor: pointer;
+//     &:focus {
+//         & > .hamburger__container {
+//           	box-shadow: 0 0 2px 2px #51a7e8;
+//         }
+//     }
+//   }
+
+//   .hamburger__container {
+//     display: flex;
+//     align-items: center;
+//     position: relative;
+//     width: 35px;
+//     height: 30px;
+//   }
+
+//   .hamburger__bars {
+//     position: absolute;
+//     width: 35px;
+//     height: 2px;
+//     background-color: #000;
+//     transition: transform 220ms ease-in-out;
+//     &:before, &:after {
+//         display: block;
+//         position: absolute;
+//         width: 35px;
+//         height: 2px;
+//         background-color: #000;
+//         content: '';
+//     }
+//     &:before {
+//         top: -12px;
+//         transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+//     }
+//     &:after {
+//         bottom: -12px;
+//         transition: bottom 100ms 250ms ease-in,
+//           			transform 220ms ease-in-out;
+//     }
+//   }
+
+//   .hamburger--active {
+//     .hamburger__bars {
+//         transform: rotate(225deg);
+//         transition: transform 220ms 120ms ease-in-out;
+//         &:before {
+//             top: 0;
+//             transition: top 100ms ease-out;
+//         }
+//         &:after {
+//             bottom: 0;
+//             transform: rotate(-90deg);
+//             transition: bottom 100ms ease-out,
+//             		  	transform 220ms 120ms ease-in-out;
+//         }
+//     }
+// }
+
+//   .hamburger, .hamburger__container {
+//     &:focus {
+//       	outline: none;
+//   	}
+//   }
+
+//   .side__menu {
+//     display: flex;
+//     box-sizing: border-box;
+//     position: absolute;
+//     height: 70%;
+//     width: 200px;
+//     top: 70px;
+//     right: -300px;
+//     padding: 0;
+//     background-color: red;
+//     transition: 0.3s transform ease-in-out;
+//   }
+
+//   .side__menu ul {
+//     position: absolute;
+//     display: flex;
+//     flex-direction: column;
+//     box-sizing: border-box;
+//     height: calc(100% - 70px);
+//     flex-wrap: wrap;
+//     margin: 0 10px;
+//     padding: 0;
+//     list-style-type: none;
+//     align-content: flex-start;
+//   }
+
+//   .side-__menu ul li {
+//     display: flex;
+//     flex-direction: column;
+//     height: 30px;
+//     background: $c-primary-second;
+//     flex-basis: 100%;
+//     margin-top: 70px;
+//     color: #696e9e;
+//     border-radius: 5px;
+//     overflow: hidden;
+//   }
+
+//   .side__menu ul li a {
+//     display: flex;
+//     padding: 10px;
+//     align-items: center;
+//     width: 100%;
+//     height: 100%;
+//     background: $c-primary-third;
+//     text-decoration: none;
+//     box-sizing: border-box;
+//   }
+
+//   .hamburger:focus ~ .side__menu, .side__menu:hover {
+//     transform: translateX(-300px);
+//   }
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__list-item {
+  // padding: 10px;
+  list-style: none;
+  // margin-right: 50px;
+}
+
+.nav__link {
+  color: $c-details;
+  font-weight: $fw-bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 11px;
+
+  &:hover {
+    color: $c-black;
+    border-bottom: solid 3px $c-primary-first;
+    padding-bottom: 23px;
+  }
+}
+
+/*content*/
+
+.content__container {
+  // width: calc(100% - 20%);
+  // background: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// .main {
+//   background: blue;
+// }
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.welcome__content {
+  margin: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome__content p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-btn {
+  margin-top: 25px;
+  padding: 22px 70px;
+  border-radius: 40px;
+  font-weight: 800;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background: $c-primary-first;
+  color: $c-white;
+}
+
+.welcome__picture {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  object-position: center;
+
+}
+
+// stats-section
+
+.stats {
+  background:yellow;
+}
+
+.stats h2 {
+  text-align: center;
+}
+
+.stats__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.stats__bin {
+  margin-top: 25px;
+  background: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-circle {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  position: relative;
+  background: $c-primary-second;
+}
+
+img[class*="stats__img"] {
+  position: absolute;
+  left: 45%;
+}

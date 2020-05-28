@@ -1,0 +1,66 @@
+    $c-primary-first: #08a6e4;
+    $c-primary-second: #fb3b64;
+    $c-primary-third: #55dfb4;
+    $c-black: #000000;
+    $c-white: #ffffff;
+    $c-background: #f7f7f7;
+    $c-details: #a5a5a5;
+    $c-shadow: #00000029;
+    $f-h: 'Raleway', sans-serif;
+    $f-p: 'Open Sans', sans-serif;
+    $fw-light: 300;
+    $fw-normal: 400;
+    $fw-bold: 700;
+    $fw-black: 800;
+
+/*reset*/
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /* fonts */
+
+  a, p, ul, span {
+    font-family: $f-p;
+  }
+
+  h1 {
+    font-size: 3.063rem;
+    font-weight: $fw-normal;
+    font-family: $f-h;
+    color: $c-black;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: $fw-light;
+    margin: 5px 45px;
+    font-family: $f-h;
+    color: $c-black;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: $fw-bold;
+    margin: 5px;
+    font-family: $f-h;
+    color: $c-black;
+  }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: $fw-light;
+    font-family: $f-h;
+    color: $c-primary-first;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*header*/
+  header {
+      display: flex;
+      justify-content: space-evenly;
+  }
