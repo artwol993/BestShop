@@ -106,7 +106,7 @@ header {
 
 .main-btn {
   margin-top: 25px;
-  padding: 22px 70px;
+  padding: 22px 90px;
   border-radius: 40px;
   font-weight: 800;
   border: none;
@@ -117,7 +117,7 @@ header {
 }
 
 .welcome__picture {
-  width: 100%;
+  width: 200%;
   height: auto;
   margin-bottom: 20px;
   -o-object-position: center;
@@ -126,6 +126,7 @@ header {
 
 .stats h2 {
   text-align: center;
+  margin-top: 20px;
 }
 
 .stats__container {
@@ -212,8 +213,8 @@ img[class*=stats__img] {
 }
 
 .profits__box {
-  height: 470px;
-  margin: 20px 30px;
+  height: 400px;
+  margin: 15px 30px;
   background: #ffffff;
   border-radius: 5px;
   border: solid 1px #E8E9ED;
@@ -223,45 +224,80 @@ img[class*=stats__img] {
 }
 
 .profits__box__double {
-  height: 60%;
-  margin: 5px 5px;
-}
-
-.profits__box__double-img {
-  height: 40%;
+  height: 50%;
+  padding: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   box-sizing: border-box;
 }
 
-.profits__box__double-img:last-of-type {
-  background: #55dfb4;
-  border-radius: 5px;
+.profits__box__double__img {
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.profits__box__double-img img {
+.profits__box__double__img:last-of-type {
+  background: #55dfb4;
+  border-radius: 5px;
+  margin: 0;
+  height: 40%;
+}
+
+.notebook-picture {
   width: 200px;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+}
+
+.phone-picture {
+  width: 200px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  top: 12px;
+  left: 23px;
+}
+
+.trumpet-picture {
+  width: auto;
+  height: 90%;
 }
 
 .profits__box__double h2 {
-  font-size: 30px;
-  margin: 20px;
+  font-size: 28px;
+  padding: 12px 12px;
 }
 
 .profits__box__double p {
   font-size: 14px;
   font-weight: 400;
-  margin: 20px;
+  padding: 12px 12px;
 }
 
-.phone-picture::after {
+.profits__box__double__img-notebook::after {
   content: "";
-  width: 320px;
-  height: 320px;
+  display: block;
+  width: 140px;
+  height: 140px;
+  background-color: #fb3b64;
+  border-radius: 40px;
+  position: relative;
+  transform: rotate(45deg);
+  left: 40px;
+  top: -36px;
+}
+
+.profits__box__double__img-iphone::after {
+  content: "";
+  width: 150px;
+  height: 150px;
   background-color: #08a6e4;
   display: block;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */

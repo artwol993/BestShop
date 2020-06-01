@@ -362,8 +362,8 @@ img[class*="stats__img"] {
 }
 
 .profits__box {
-  height: 400px;
-  margin: 15px 30px;
+  height: 440px;
+  margin: 20px 30px;
   background: $c-white;
   border-radius: 5px;
   border: solid 1px #E8E9ED;
@@ -384,7 +384,7 @@ img[class*="stats__img"] {
 .profits__box__double__img {
   height: 50%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 
@@ -412,20 +412,20 @@ img[class*="stats__img"] {
 }
 
 .trumpet-picture {
-  width: auto;
-  height: 90%;
+  width: 85%;
+  height: auto;
 }
 
 
 .profits__box__double h2 {
   font-size: 28px;
-  padding: 12px 12px;
+  padding: 2px 10px;
 }
 
 .profits__box__double p {
   font-size: 14px;
   font-weight: $fw-normal;
-  padding: 12px 12px;
+  padding: 2px 10px;
 }
 
 .profits__box__double__img-notebook::after {
