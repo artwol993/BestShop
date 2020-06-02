@@ -478,7 +478,6 @@ img[class*="stats__img"] {
   display: flex;
   justify-content:space-evenly;
   align-items: center;
-  position: relative;
 }
 
 .pricing__price__details h3 {
@@ -490,21 +489,4 @@ img[class*="stats__img"] {
   text-align: center;
   font-size: 46px;
   color: $c-primary-second;
-  font-family: $f-p;
-  font-weight: $fw-light;
 }
-
-.begin {
-  position: relative;
-  padding: 25px 50px;
-  border: none;
-  border-radius: 40px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 800;
-  color: $c-white;
-  background: $c-primary-second;
-  top: -35px;
-  left: 61px;
-}
-

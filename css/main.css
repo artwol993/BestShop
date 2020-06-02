@@ -301,4 +301,55 @@ img[class*=stats__img] {
   border-radius: 50%;
   position: absolute;
 }
+
+.pricing__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__box {
+  width: 70%;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing__box-inside {
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #fb3b64;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.pricing__price__details h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.pricing-price {
+  text-align: center;
+  font-size: 46px;
+  color: #fb3b64;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.begin {
+  position: relative;
+  padding: 25px 50px;
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;
+  color: #ffffff;
+  background: #fb3b64;
+  top: -35px;
+  left: 61px;
+}
 /*# sourceMappingURL=main.css.map */

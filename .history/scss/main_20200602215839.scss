@@ -495,8 +495,8 @@ img[class*="stats__img"] {
 }
 
 .begin {
-  position: relative;
-  padding: 25px 50px;
+  position: ;
+  padding: 25px 30px;
   border: none;
   border-radius: 40px;
   text-decoration: none;
@@ -504,7 +504,6 @@ img[class*="stats__img"] {
   font-weight: 800;
   color: $c-white;
   background: $c-primary-second;
-  top: -35px;
-  left: 61px;
+  position: relative;
 }
 
