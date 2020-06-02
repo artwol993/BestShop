@@ -370,7 +370,6 @@ img[class*="stats__img"] {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .profits__box__double {
@@ -394,6 +393,7 @@ img[class*="stats__img"] {
   border-radius: 5px;
   margin: 0;
   height: 40%;
+  align-items: flex-end;
 }
 
 .notebook-picture {
