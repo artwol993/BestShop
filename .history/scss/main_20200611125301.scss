@@ -6,7 +6,6 @@
     $c-background: #f7f7f7;
     $c-details: #a5a5a5;
     $c-shadow: #00000029;
-    $c-details-second: #707070;
     $f-h: 'Raleway', sans-serif;
     $f-p: 'Open Sans', sans-serif;
     $fw-light: 300;
@@ -462,7 +461,8 @@ img[class*="stats__img"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  height: 1500px;
+}
 
 .pricing__box {
   width: 70%;
@@ -473,24 +473,13 @@ img[class*="stats__img"] {
 
 .pricing__box-inside {
   height: 300px;
+  padding: 10px;
+  border: 1px solid $c-primary-second;
   border-radius: 15px;
   display: flex;
   justify-content:space-evenly;
   align-items: center;
   position: relative;
-  padding: 10px;
-}
-
-.pricing__box-basic {
-  border: 1px solid $c-primary-second;
-}
-
-.pricing__box-professional {
-  border: 1px solid $c-primary-first;
-}
-
-.pricing__box-premium {
-  border: 1px solid $c-primary-third;
 }
 
 .pricing__price__details h3 {
@@ -506,221 +495,17 @@ img[class*="stats__img"] {
   font-weight: $fw-light;
 }
 
-.pricing__box__list {
-  list-style: none;
-}
-
-.include::before {
-  content: "";
-  width: 11px;
-  height: 11px;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url("../assets/Ckechmark-1.svg");
-}
-
-.not__include::before {
-  content: "";
-  width: 11px;
-  height: 11px;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url("../assets/Close.svg");
-}
-
-button[class*="btn__begin"] {
+.btn__begin {
   position: relative;
-  padding: 22px 73px;
-  width: 1px;
+  padding: 25px 50px;
   border: none;
   border-radius: 40px;
   text-decoration: none;
-  font-weight: 800;
-  color: #ffffff;
-  top: -35px;
-  left: 61px;
-  /* transform: translate(-23%, 0); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn__begin-basic {
-  background: $c-primary-second;
-  }
-.btn__begin-professional {
-background: $c-primary-first;
-}
-
-.btn__begin-premium {
-  background: $c-primary-third;
-}
-}
-
-// contact section
-
-
-
-.contact__window {
-  margin: 0 10px 0 10px;
-  display: flex;
-  flex-direction: column;
-
-  h2 {
-    margin: 5px 15px;
-  }
-
-  h3 {
-    margin: 5px 15px 30px 15px;
-  }
-
-  .contact__details{
-    margin: 15px 15px;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.contact__icon {
-  font-size: 1rem;
-  color: $c-primary-third;
-  display: inline-flex;
-  text-decoration: none;
-
-  img {
-    margin-right: 5px;
-  }
-}
-
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  font-weight: 600;
-  color: $c-primary-first;
-  font-size: 35px;
-}
-
-.contact__form--name {
-  margin: 5px;
-}
-
-.contact__form--email {
- margin: 15px 5px;
-}
-
-.form__label {
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 5px;
-  letter-spacing: 3px;
-  font-size: 0.800rem;
-  display: flex;
-  text-transform: uppercase;
-  color: $c-primary-first;
-}
-
-.form__input {
-  padding: 5px;
-  outline: none;
-  border: none;
-  border-bottom: solid 1px $c-primary-third;
-  font-size: 18px;
-  width: 95%;
-}
-
-// contact__checkbox
-
-.contact__checkbox {
-  margin: 15px;
-}
-
-.checkbox__label {
-  display: flex;
-}
-
-.checkbox__label {
-  input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;}
-}
-
-.checkmark {
-  position: relative;
-  left: 0;
-  top: 5px;
-  height: 25px;
-  width: 25px;
-  border: solid 1px #95989A;
-  border-radius: 4px;
-  background: #FFFFFF;
-  background-size: auto;
-}
-
-
-.contact__btn {
-  position: relative;
-  padding: 20px 80px;
-  border: none;
-  border-radius: 35px;
-  align-self: flex-end;
   text-align: center;
   font-weight: 800;
-  color:$c-white;
-  background: $c-primary-first;
+  color: $c-white;
+  background: $c-primary-second;
+  top: -35px;
+  left: 61px;
 }
-
-
-
-
-
-
-// footer {
-
-  .footer {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-
-    .footer__container {
-      width: 1400px;
-      height: 90px;
-      box-shadow: 0 -3px 6px rgba(0,0,0,.16);
-      display: flex;
-    }
-  }
-
-  .footer__small__container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .footer__logo {
-      width: 250px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .footer__icons {
-      width: 70px;
-      display: flex;
-      margin-right: 5px;
-    }
-  }
-
-
-  .footer__copyraight {
-    font-size: 0.688rem;
-    color: $c-details-second;
-  }
-
-
-  .footer__twit {
-    margin-right: 10px;
-  }
-
-
 
