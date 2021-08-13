@@ -6,7 +6,10 @@
 }
 
 /* fonts */
-a, p, ul, span {
+a,
+p,
+ul,
+span {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -48,38 +51,46 @@ h3 {
 }
 
 /*header*/
-header {
+.header {
   width: 100vw;
   height: 70px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
-  box-shadow: 0px 3px 6px #00000029;
-  background: red;
-}
-
-.nav__list {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  padding: 10px;
 }
 
-.nav__list-item {
+.menu__toggle {
+  display: flex;
+  flex-direction: column;
+}
+.menu__toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #08a6e4;
+}
+
+.header__nav {
+  width: 300px;
+  display: flex;
+}
+.header__nav li {
   list-style: none;
 }
-
-.nav__link {
+.header__nav a {
   color: #a5a5a5;
-  font-weight: 700;
-  text-decoration: none;
   text-transform: uppercase;
-  font-size: 11px;
+  list-style: none;
+  text-decoration: none;
+  margin: 0 5px;
 }
-.nav__link:hover {
-  color: #000000;
-  border-bottom: solid 3px #08a6e4;
-  padding-bottom: 23px;
+
+.menu__btn {
+  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 /*content*/
@@ -125,7 +136,7 @@ header {
   height: auto;
   margin-bottom: 20px;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 .stats {
@@ -154,7 +165,7 @@ header {
   align-items: center;
 }
 
-div[class*=stats__circle] {
+div[class*="stats__circle"] {
   width: 63px;
   height: 63px;
   border-radius: 50%;
@@ -174,7 +185,7 @@ div[class*=stats__circle] {
   background: #55dfb4;
 }
 
-img[class*=stats__img] {
+img[class*="stats__img"] {
   position: absolute;
 }
 
@@ -222,7 +233,7 @@ img[class*=stats__img] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #F7F834;
+  background: #f7f834;
 }
 
 .profits__box {
@@ -230,7 +241,7 @@ img[class*=stats__img] {
   margin: 15px 30px;
   background: #ffffff;
   border-radius: 5px;
-  border: solid 1px #E8E9ED;
+  border: solid 1px #e8e9ed;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -404,7 +415,7 @@ img[class*=stats__img] {
   background-image: url("../assets/Close.svg");
 }
 
-button[class*=btn__begin] {
+button[class*="btn__begin"] {
   position: relative;
   padding: 22px 73px;
   width: 1px;
@@ -526,7 +537,7 @@ button[class*=btn__begin] {
   height: 23px;
   width: 23px;
   background-color: #ffffff;
-  border: solid 1px #95989A;
+  border: solid 1px #95989a;
   border-radius: 4px;
 }
 .checkmark::after {
